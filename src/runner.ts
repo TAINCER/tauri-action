@@ -52,7 +52,7 @@ async function getRunner(
     return new Runner('npm', ['run', 'tauri']);
   }
 
-  await execCommand('npm', ['install', '-g', '@tauri-apps/cli'], {
+  await execCommand('npm', ['install', '-g', '@tauri-apps/cli@next'], {
     cwd: undefined,
   });
 
